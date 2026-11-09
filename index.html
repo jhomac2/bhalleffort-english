@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self' blob:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Bhalleffort</title>
+  <meta name="description" content="Aprende inglés general, inglés para viajar, inglés técnico de TI y ciberseguridad, inglés de trabajo y pronunciación, de A1 a C1, con exámenes y simuladores tipo IELTS y TOEFL. Funciona sin internet.">
+  <meta name="theme-color" content="#12203A">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Bhalleffort">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Ir al contenido</a>
+
+  <div id="update" class="update" role="status" hidden>
+    <span>Hay una versión nueva de Bhalleffort.</span>
+    <button type="button" class="btn small primary" data-act="reload">Actualizar</button>
+  </div>
+
+  <main id="app" tabindex="-1">
+    <noscript><p class="note warn">Bhalleffort necesita JavaScript activado para funcionar.</p></noscript>
+  </main>
+
+  <footer class="credit">
+    <p>Diseñado por <strong>Jhordy Cabascango</strong></p>
+    <p><a href="https://www.tiktok.com/@mr_jhordy21" target="_blank" rel="noopener noreferrer">TikTok @mr_jhordy21</a></p>
+  </footer>
+
+  <nav id="nav" aria-label="Principal">
+    <button type="button" data-to="home" aria-current="page">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span>Hoy</span>
+    </button>
+    <button type="button" data-to="lessons">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Lecciones</span>
+    </button>
+    <button type="button" data-to="cards">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="3" y="8" width="14" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 4h12a2 2 0 0 1 2 2v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Tarjetas</span>
+    </button>
+    <button type="button" data-to="progress">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 20v-8M12 20V5M19 20v-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span>Progreso</span>
+    </button>
+  </nav>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+
+  <script src="js/boot.js"></script>
+
+  <script src="data/helpers.js"></script>
+  <script src="data/path.js"></script>
+  <script src="data/placement.js"></script>
+  <script src="data/exams.js"></script>
+
+  <script src="data/general-a1.js"></script>
+  <script src="data/general-a2.js"></script>
+  <script src="data/general-b1.js"></script>
+  <script src="data/general-b1b.js"></script>
+  <script src="data/general-b2a.js"></script>
+  <script src="data/general-b2b.js"></script>
+  <script src="data/general-c1a.js"></script>
+  <script src="data/general-c1b.js"></script>
+  <script src="data/travel.js"></script>
+  <script src="data/tech.js"></script>
+  <script src="data/tech-b1.js"></script>
+  <script src="data/tech-b2.js"></script>
+  <script src="data/tech-c1.js"></script>
+  <script src="data/work.js"></script>
+  <script src="data/work-b2.js"></script>
+  <script src="data/exam-b2.js"></script>
+  <script src="data/work-c1.js"></script>
+  <script src="data/exam-c1.js"></script>
+  <script src="data/sims.js"></script>
+  <script src="data/pron.js"></script>
+  <script src="data/listen-a1.js"></script>
+  <script src="data/listen-a2.js"></script>
+  <script src="data/listen-b1.js"></script>
+
+  <script src="js/core.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/runner.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/exams.js"></script>
+  <script src="js/sims.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
